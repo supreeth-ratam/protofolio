@@ -1,205 +1,393 @@
 * {
-  margin: 0px;
-  padding: 0px;
-  border: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-/* -------------------navmenu------------------- */
-nav{
-  position: absolute;
-  top: 60px;
-  right: 0px;
-  font-size: 20px;
-  color: white;
+::-webkit-scrollbar {
+  width: 0;  
+  background: transparent;  
 }
-#navli{
-  position: relative;
-  right: -250px;
-  transition: 0.5s;
+html {
+  scroll-behavior: smooth;
 }
-nav i{
-  cursor: pointer;
-  padding: 5px;
-  height: 25px;
-  width: 25px;
-  font-size: 1.5rem ;}
-nav li{
-  list-style: none;
-  color: white;
-  font-family: 'Ubuntu'; 
-  margin: 15px 0px;
-}
-nav a{
-  text-decoration: none ;
-  color: white;
-  }
-/*------------------------Cover Page------------------------*/
-.cover {
-  position: relative;
-  background: url("img/cover.png");
+.main{
+  background: url(images/bg.jpg);
   background-size: cover;
+  background-position: center;
+  background-repeat: repeat-y;
+  overflow: scroll;
+  scrollbar-width: none;
+}
+
+#icon-box{
+  display: none;
+}
+.logo {
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 25px;
+  color: white;
+  margin-left: 100px;
+}
+.pink{
+  color: rgb(238, 90, 134);
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  font-family: 'Ubuntu', sans-serif;
+  justify-content: space-between;
+  font-weight: bold;
+  height: 80px;
+}
+.navbar ul {
+  display: flex;
+  align-items: center;
+  margin-right: 100px;
+}
+.navbar ul li {
+  list-style: none;
+  padding: 20px 20px;
+  position: relative;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  transition: 500ms ease-in;
+}
+.Active::after{
+  content: "";
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+  width: 80%;
+  height: 2px;
+  background-color: rgb(238, 90, 134);
+}
+.navbar ul li a:hover{
+  color: rgb(238, 90, 134);
+  font-size: 1.2rem;
+}
+.bar{
+  color: white;
+  display: none;
+}
+.container {
+    height: 100vh;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+  }
+.dp {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  background: url(images/dp2.jpg);
+  background-size: cover;
+  background-position: center;
+  /* background: rgba(0, 0, 0, 0.5); */
+  box-shadow: 0 0 30px 10px rgb(238, 90, 134);
+  margin-top: 80px;
+}
+
+.container h1 {
+  font-family: "Caveat", cursive;
+  font-size: 70px;
+  padding: 16px;
+
+}
+.container h2 {
+  font-family: "Syne Mono", monospace;
+}
+.sociaLinks{
+    display: flex;
+    font-size: 1.7rem;
+    padding: 10px;
+}
+.sociaLinks i{
+    padding: 10px;
+}
+.sociaLinks a{
+  color: white;
+}
+.sociaLinks i:hover{
+  color: rgb(238, 90, 134);
+}
+.chevron{
+  margin: 40px 0px;
+  font-size: 2rem;
+  transition: 500ms;
+}
+.chevron a{
+  color: #fff;
+}
+.chevron:hover{
+ color: rgb(238, 90, 134);
+ font-size: 2.2rem;
+}
+.aboutme{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 20px 0px 20px;
+  height: 100vh ;
+  font-family: 'Arvo',serif;
+}
+.heading{
+  font-family: 'Julius Sans One', sans-serif;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+}
+.line1{
+  width: 70%;
+  margin: 8px;
+  background-color: rgb(238, 90, 134);
+  height: 2px;
+}
+.line2{
+  width: 50%;
+  background-color: rgb(238, 90, 134);
+  height: 2px;
+}
+.para1 span{
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.para1{
+  font-family: 'Arvo', serif;
+  color: white;  
+  line-height: 1.7;
+  font-size: 1.1rem;
+  text-align: center;
+  margin: 30px 0px;
+  padding: 10px 30px;
+}
+.grid-container{
+  margin: 0px 100px;
+  display: grid;
+  grid-template-columns: 45% 45%;
+  gap: 50px;
+}
+.left-col{
+  color: white;
+  margin: auto;
+}
+.left-col h2{
+  font-family:'Julius Sans One', sans-serif; 
+}
+
+.right-col h2{
+  font-family:'Julius Sans One', sans-serif; 
+  color: white;
+}
+.left-col table{
+  height: 100%;
+  margin-top: 20px;
+}
+.left-col table td ,.left-col table th{
+  padding: 10px;
+}
+.left-col th{  
+  color: rgb(238, 90, 134);
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+.icon-container{
+  display:grid;
+  grid-template-columns: auto auto auto auto;
+  margin-top: 30px;
+}
+.icon-holder{
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 15px;
+  height: 100px;
+  width: 100px;
+  color: white;
+  background: rgba(0, 0, 0, 0.3);
+}
+.icon-holder i{
+  font-size: 2rem;
+  margin: 5px;
+}
+.contactme{
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
-.circle {
-  border-radius: 50%;
-  height: 250px;
-  width: 250px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.downloadCv{
+  display: block;
+  padding: 10px 20px;
+  color: rgb(238, 90, 134);
+  border: 2px solid rgb(238, 90, 134);
+  background: rgba(0, 0, 0, 0.3);
+  font-family: 'Arvo';
+  margin-top: 50px;
 }
-.circle img {
-  border-radius: 50%;
-  height: 220px;
-  width: 220px;
-  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
-    rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
-    rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+.skill-container{
+  display: grid;
+  margin: 30px 100px;
+  grid-template-columns: auto auto;
+  gap: 50px;
 }
-.cover h1 {
-  font-family: "Caveat", cursive;
-  color: white;
-  font-size: 80px;
-}
-.cover h2 {
-  font-family: "Syne Mono", monospace;
-  color: white;
-  font-size: 1.6rem;
-  padding-top: 5px;
-}
-.contactLink {
-  /*background: rgba(0, 0, 0, 0.5);*/
-   height: 100%; 
-   position: absolute;
-   left: 0px;
-   top: 0px; 
-   display: flex;
-   justify-content: end; 
-    flex-direction: column; 
-   color: white;
-   width: auto;
-   font-size: 25px;
-}
-.contactLink i {
-  padding: 3px;
-  margin: 20px 8px 0px 20px;
-}
-.contactLink i:last-child {
-     margin: 20px 8px 100px 20px; 
-  }
-/*-------------- About me ---------------*/
-.col{
-    color: hotpink;
-}
-.aboutme{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 30vh;
-    font-family: 'Ubuntu';
-    font-size: 25px;
-}
-.box1{
-    display: flex;
-    justify-content: space-between;
-    height: 80vh;
-    margin: 0px 100px 0px 100px;
-    
-}
-.left-col{
-    width: 50%;
-}
-.right-col{
-    width: 50%;
-    font-family: 'Ubuntu';
-    font-size: 1.3rem;
-    color: grey;
-}
-.right-col h1{   
-    color: black;
-    margin: 5px 0 15px 0px;}
-.right-col p{
-    line-height: 2.3;
-    
-}
-
-.right-col .fa-brands{
-    font-size: 2.5rem;
-    color: grey;
-    margin: 10px 10px 0px 0px;
-}
-.right-col .fa-brands:hover{
-  color: hotpink;
-}
-table{
-    height: 80%;
-    font-family: 'Ubuntu';
-    font-size: 1.3rem;
-    width: auto;
-
-}
-td{
-    color: grey;
-}
-/*-------------------------- Resume-------------------------- */
-#resume{
-  font-family: 'Ubuntu';
-}
-#edu{
-  text-align: center;
-}
-.comtainer{
-  margin: 5px 100px 0px 100px;
-}
-.row{
-  display: flex;
+.left-box{
   width: 100%;
-  height: 180px;}
-.emptybox{
-  width: 45%;
-  background-color: white;
+  color: #fff;
 }
-.filledbox{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 45%;
-  text-align: left;
+.left-box h2{
+  font-family: 'Julius Sans One';
+  font-size: 2rem;
+  width: 100%;
 }
-.filledbox h1{
-  font-weight: lighter;
-  margin-bottom: 15px;
+.resume{
+  display: grid;
+  grid-template-columns: 300px 50px 300px ;
+  width: 100%;
+  padding: 10px;
 }
-#filled2{
-  text-align: right;
+.filled-box{
+  margin:  20px 10px;
 }
-.filledbox h2{
-  color: grey;
-  font-weight: lighter;
-  margin-bottom: 10px;
-}
-.filledbox p{
-  color: rgb(58, 56, 56);
-  margin-top: 5px;
+.icon-box{
+  font-size: 1.2rem;
+  color: #fff;
   
-}
-.iconbox{
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 10%;
-  font-size: 2rem;
 }
-.iconbox div{
-  display: flex;
-  background-color: hotpink;
-  border-radius: 50%;
-  color: white;
+.icon-box i{
+  background-color: rgb(238, 90, 134);
   height: 50px;
   width: 50px;
-  justify-content: center;
+  display: flex;
   align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  border-radius: 50%;
+  margin: 0px ;
+}
+.filled-box h2{
+  font-size: 20px;
+}
+.filled-box{
+  padding: 5px;
+}
+.filled-box h3{
+  font-size: 1rem;
+  margin: 5px 0px;
+  font-family: 'Arvo';
+}
+
+.icon-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.skills-container{
+  display:grid;
+  grid-template-columns: auto auto auto;
+  margin-top: 30px;
+}
+.skill-holder{
+  position: relative;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 15px;
+  height: 140px;
+  width: 140px;
+  color: white;
+}
+.outer{
+  position: absolute;
+  height: 140px;
+  width: 140px;
+  border-radius: 50%;
+}
+.inner{
+  position: absolute;
+  flex-direction: column;
+  height: 130px ;
+  width: 130px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+circle{
+  fill: none;
+  stroke: rgb(238, 90, 134);
+  stroke-width: 5px;
+  stroke-dasharray: 375;
+  stroke-dashoffset: 375;
+
+}
+#html{
+  animation: html 2s linear forwards;
+}
+#css{
+  animation: css 2s linear forwards;
+}
+#js{
+  animation: js 2s linear forwards;
+}
+#php{
+  animation: php 2s linear forwards;
+}
+#reactjs{
+  animation: reactjs 2s linear forwards;
+}
+#python{
+  animation: python 2s linear forwards;
+}
+#c{
+  animation: c 2s linear forwards;
+}
+
+@keyframes c {
+  100%{
+    stroke-dashoffset: 49 ;
+  }  
+}
+@keyframes python {
+  100%{
+    stroke-dashoffset: 56 ;
+  }  
+}
+@keyframes reactjs {
+  100%{
+    stroke-dashoffset: 112.5 ;
+  }  
+}
+@keyframes php {
+  100%{
+    stroke-dashoffset: 131 ;
+  }  
+}
+@keyframes js {
+  100%{
+    stroke-dashoffset: 75 ;
+  }  
+}
+@keyframes css {
+  100%{
+    stroke-dashoffset: 26 ;
+  }  
+}
+@keyframes html {
+  100%{
+    stroke-dashoffset: 19 ;
+  }  
 }

@@ -1,34 +1,143 @@
-@media only screen and (max-width:964px ) {
-    .contactLink{
-        position: relative;
-        left: 0px;
-        bottom: 0px;
-        flex-direction: row;
-        
+@media screen and (max-width: 635px) {
+    .logo{
+        margin: 25px 15px;
+    }
+    .navbar ul{
+        margin: auto;
+        display: none;
+    }
+    .bar{
+        display: block;
+        margin-right: 15px;
+        font-size: 1.3rem;
+    }
+    .dp{
+        height: 150px;
+        width: 150px;
+        margin-top: 100px;
+    }
+    .container{
+        height: 100vh;
+    }
+    .container h1{
+        font-size:2.7rem;
+    }
+    .container h2{
+        font-size: 1.2rem;
+        margin: 10px 10px;
+        text-align: center;
+    }
+    .sociaLinks{
+        font-size: 1.5rem;
+    }
+    .chevron{
+        margin: 20px 0px;
+        font-size: 1rem;
+      }
+}
+@media screen and (max-width: 1316px){
+    .main{
+        overflow: hidden;
+    }
+    .skill-container{
+        grid-template-columns: auto;
+    }
+    .contactme{
+        height: 100vh;
+        margin-top: 400px;
+    }
+}
+@media screen and (max-width: 1316px){
+ .grid-container{
+     grid-template-columns: auto;
+ }
+ .aboutme{
+     margin: 100px 0px;
+ }
+ .contactme{
+    height: 100vh;
+    margin-top: 500px;
+}
+}
+@media screen and (max-width: 937px){
+    .logo{
+        margin-left: 20px;
+    }
+    .navbar ul{
+        margin-right: 20px;
+    }    
+}
+@media screen and (max-width: 771px){
+    .dp{
+        height: 150px;
+        width: 150px;
+    }
+    .container h1{
+        font-size: 50px;
+    }
+    .container h2{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 685px){
+ .resume{
+     grid-template-columns: auto 50px auto;
+ }
+ .contactme{
+    height: 100vh;
+    margin-top: 600px;
+}
+}
+@media screen and (max-width: 527px){
+    .icon-container{
+        grid-template-columns: auto auto auto;
+    }
+    .contactme{
+        height: 100vh;
+        margin-top: 700px;
     }
     .aboutme{
-        height: 20vh;
+        margin-top: 300px;
     }
-    .left-col{
-        width: 100%;
+    .icon-box{
+        display: none;
+    }
+    .filled-box{
         display: flex;
+        width: fit-content;
+
+    }
+    #icon-box{
+        display: flex;
+        margin: 10px;
+    }
+    .resume{
+        display: flex;
+        flex-direction: column;
         align-items: center;
-        justify-content: center;
-        height: 57vh;
-        margin: 0px 0px 20px 44px;
     }
-    th, td {
-        margin: 10px 0px;
+    .empty-box{
+        display: none;
     }
-    .right-col{
-        width: 100%;
-        display: block;
-        margin: auto;
-        height: 80vh;
+    .skills-container{
+        grid-template-columns: auto auto;
     }
-    .box1{
-        display: block;
-        margin: 10px 100px;
-        height: 110vh;
+}
+@media screen and (max-width: 411px){
+    .contactme{
+        margin-top: 900px;
     }
-  }
+@media screen and (max-width: 480px){
+    .contactme{
+        margin-top: 1000px;
+    }
+    /* .downloadCv{
+        margin-bottom: 100px;
+    } */
+}
+@media screen and (max-width: 360px){
+    .icon-holder{
+        height: 80px;
+        width: 80px;
+    }
+}

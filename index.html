@@ -9,150 +9,337 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Syne+Mono&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Arvo:ital@0;1&family=Caveat:wght@400;500;600;700&family=Lato:ital@0;1&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Syne+Mono&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/all.min.css" />
-    <link rel="stylesheet" href="css/responsive.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Julius+Sans+One|Monda"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
   </head>
-  <body>
-    <!-- -------------------------------cover page------------------------------- -->
-    <section id="Home">
-      <div class="cover">
-        <nav>
-          <i class="fa-solid fa-bars" id="clickme"></i>
-          <ul id="navli">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Me</a></li>
-            <li><a href="#">My Resume</a></li>
-            <li><a href="#">Contact Me</a></li>
-          </ul>
-        </nav>
-        <div class="circle">
-          <img src="img/me2.jpg" alt="" />
-        </div>
-        <h1 data-aos="fade-up">Supreeth Ratam</h1>
-        <h2 data-aos="fade-up">Student / Full Stack Web Developer / 5* Coder on Hackerrank</h2>
-        <div class="contactLink">
-          <i class="fa-brands fa-linkedin-in"></i>
-          <i class="fa-brands fa-facebook-f"></i>
-          <i class="fa-brands fa-instagram"></i>
-        </div>
+  <body >
+    <div class="main" id = 'parallax'>
+    <div class="navbar">
+      <div class="logo">Supreeth <span class="pink">Ratam</span></div>
+      <ul>
+        <li><a href="#" class="Active">Home</a></li>
+        <li><a href="#aboutme">About</a></li>
+        <li><a href="#contactme">Skills</a></li>
+        <li><a href="">Protofolio</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
+      <div class="bar">
+        <i class="fa-solid fa-bars"></i>
       </div>
-    </section>
-    <!-- ----------------------------------------------AboutMe---------------------------------------------- -->
-    <section id="AboutMe">
-      <div class="aboutme" data-aos="fade-down">
-        <h1><span class="col">About</span> Me</h1>
+    </div>
+    <div class="container" data-aos="fade-up"
+    data-aos-anchor-placement="top-bottom">
+      <div class="dp"></div>
+      <h1>Supreeth Ratam</h1>
+      <h2>Full Stack Web Developer/5* Coder On Hackerrank/Student</h2>
+      <div class="sociaLinks">
+        <a href="https://www.facebook.com/supreeth.ratam"
+          ><i class="fa-brands fa-facebook-f"></i
+        ></a>
+        <a href="https://www.instagram.com/supreeth_ratam/?hl=en"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a href="https://www.linkedin.com/in/supreeth-ratam-127117221/">
+          <i class="fa-brands fa-linkedin-in"></i
+        ></a>
+        <a href="https://twitter.com/Supreet34364725"
+          ><i class="fa-brands fa-twitter"></i
+        ></a>
       </div>
-      <div class="box1">
-        <div class="left-col" data-aos="fade-right">
+      <div class="chevron">
+        
+          <a href="#aboutme"><i class="fa-solid fa-chevron-down"></i></a>
+        </i>
+      </div>
+    </div>
+    <div class="aboutme" id="aboutme">
+      <div class="heading">
+        <h1>About <span class="pink">Me</span></h1>
+        <div class="line1"></div>
+        <div class="line2"></div>
+      </div>
+      <div class="para1" data-aos="zoom-in-up">
+        <p>
+          <span class="pink">Hello there!</span>
+          This is supreeth ratam, currently pursuing B-tech in Mechanical
+          Engineering in Indian Institue of Technology Bombay I'm interested in
+          Computers, I am a 5* coder on Hackerrank with good grip on C++ and
+          python. Recently I have started my journey of Web Development.This is
+          my first profile website.I have used HTML,CSS and JavaScript to build
+          this website. I hope you find it attractive.Don't forget to share your
+          thoughts in contact section.
+        </p>
+      </div> 
+      <div class="grid-container">
+        <div class="left-col" data-aos="zoom-in-up">
+          <h2>Personal details</h2>
           <table>
             <tr>
-              <th>Name:</th>
-              <td>Supreeth Ratam</td>
+              <th>Phone</th>
+              <td>9010847500</td>
             </tr>
             <tr>
-              <th>DOB:</th>
-              <td>13.11.2002</td>
-            </tr>
-            <tr>
-              <th>Email:</th>
+              <th>E-mail</th>
               <td>supreethratam@gmail.com</td>
             </tr>
             <tr>
-              <th>Course:</th>
-              <td>B-Tech, Mechanical Engineering</td>
+              <th>website</th>
+              <td>supreeth-ratam.github.io</td>
             </tr>
             <tr>
-              <th>College:</th>
-              <td>IIT Bombay</td>
+              <th>ADDRESS</th>
+              <td>Room No 189, Hostel 2, IIT Bombay</td>
             </tr>
             <tr>
-              <th>Year of Graduation:</th>
-              <td>2024</td>
+              <th>Job Status</th>
+              <td>Student, Freelancer</td>
             </tr>
           </table>
         </div>
-        <div class="right-col" data-aos="fade-left">
-          <h1 ata-aos="fade-in">Hello there!</h1>
-          <p>
-            This is supreeth ratam, currently pursuing B-tech in Mechanical
-            Engineering in Indian Institue of Technology Bombay
-          </p>
-          <p>
-            I'm interested in Computers,I am a 5* coder on Hackerrank with good
-            grip on C++ and python. Recently I have started my journey of Web
-            Development.This is my first profile website.I have used HTML,CSS
-            and JavaScript to build this website. I hope you find it
-            attractive.Don't forget to share your thoughts in contact section.
-          </p>
-          <i class="fa-brands fa-linkedin"></i>
-          <i class="fa-brands fa-facebook-square"></i>
-        </div>
-      </div>
-    </section>
-    <!-----------------------------------resume----------------------------------->
-    <section id="resume">
-      <div class="aboutme">
-        <h1>My <span class="col">Resume</span></h1>
-      </div>
-      <h2 id="edu">My Education</h2>
-      <div class="container">
-        <div class="row">
-          <div class="emptybox"></div>
-          <div class="iconbox">
-            <div><i class="fa-solid fa-graduation-cap"></i></div>
-          </div>
-          <div class="filledbox" data-aos="fade-left">
-            <h1>Bachelor's Degree</h1>
-            <h2>Indian Institue of Technology Bombay 2020-2024</h2>
-            <p>B-Tech, Mechanical Engineering</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="filledbox" id="filled2" data-aos="fade-right">
-            <h1>Intermediate Education</h1>
-            <h2>Narayana Junior College - 2018 - 2020</h2>
-            <p>M.P.C , Grade: A , Percentage: 93.4%</p>
-          </div>
-          <div class="iconbox">
-            <div><i class="fa-solid fa-graduation-cap"></i></div>
-          </div>
-          <div class="emptybox"></div>
-        </div>
-        <div class="row">
-          <div class="emptybox"></div>
-          <div class="iconbox">
-            <div><i class="fa-solid fa-graduation-cap"></i></div>
-          </div>
-          <div class="filledbox" data-aos="fade-left">
-            <h1>Secondary Education</h1>
-            <h2>Narayana eCO school</h2>
-            <p>Science, CGPA : 9.80</p>
+        <div class="right-col" data-aos="zoom-in-up">
+          <h2>My Intrests</h2>
+          <div class="icon-container">
+            <div class="icon-holder" data-aos="zoom-in-up">
+              <i class="fa-solid fa-code"></i>
+              <p>Web Dev</p>
+            </div>
+            <div class="icon-holder" data-aos="zoom-in-up">
+              <i class="fa-brands fa-python"></i>
+              <p>python</p>
+            </div>
+            <div class="icon-holder" data-aos="zoom-in-up">
+              <i class="fa-solid fa-microchip"></i>
+              <p>Tech</p>
+            </div>
+            <div class="icon-holder" data-aos="zoom-in-up">
+              <i class="fa-solid fa-gears"></i>
+              <p>Mechanics</p>
+            </div>
+            <div class="icon-holder" data-aos="zoom-in-up">
+              <i class="fa-solid fa-plane"></i>
+              <p>Travel</p>
+            </div>
+            <div class="icon-holder" data-aos="zoom-in-up">
+              <i class="fa-solid fa-music"></i>
+              <p>Music</p>
+            </div>
+            <div class="icon-holder" data-aos="zoom-in-up">
+              <i class="fa-solid fa-gamepad"></i>
+              <p>Games</p>
+            </div>
+            <div class="icon-holder" data-aos="zoom-in-up">
+              <i class="fa-solid fa-motorcycle"></i>
+              <p>Bikes</p>
+            </div>
           </div>
         </div>
       </div>
-    </section>
-    <script>
-      var navli = document.getElementById("navli");
-      var clickme = document.getElementById("clickme");
-      navli.style.right = "-250px";
-      clickme.onclick = function () {
-        if (navli.style.right == "-250px") {
-          navli.style.right = "20px";
-        } else {
-          navli.style.right = "-250px";
-        }
-      };
-    </script>
-     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-     <script>
-       AOS.init({
-        offset: 120,
-        duration: 1000,
-       });
-     </script>
-  </body>
+      <button class="downloadCv">
+        Download CV
+      </button>
+    </div>
+    <div class="contactme" id = "contactme">
+      <div class="heading">
+        <h1>Skills</h1>
+          <div class="line1"></div>
+          <div class="line2"></div>
+      </div>
+      <div class="skill-container">
+        <div class="left-box">
+          <h2>My <span class="pink">Resume</span></h2>
+          <div class="resume">
+            <div class="filled-box"  data-aos="fade-up"
+            data-aos-anchor-placement="bottom-bottom">
+            <div class="icon-box" id="icon-box"><i class="fa-solid fa-graduation-cap"></i></div>  
+            <div>
+              <h2>Bachelor's Degree</h2>
+              <h3>IIT Bombay <br><spam class="pink"><i>(2020-2024)</i></spam> </h3>
+              <p>B-Tech, Mechanical Engineering</p></div>
+            </div>
+            <div class="icon-box">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <div class="empty-box"></div>
+            <div class="empty-box"></div>
+            <div class="icon-box">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <div class="filled-box" data-aos="fade-up"
+            data-aos-anchor-placement="bottom-bottom">
+            <div class="icon-box" id="icon-box"><i class="fa-solid fa-graduation-cap"></i></div>
+              <div>
+              <h2>Intermediate Education</h2>
+              <h3>Narayana Junior College <br> <spam class="pink"><i>(2018-2020)</i></spam> </h3>
+              <p>M.P.C , Grade: A , Percentage: 93.4% </p></div>
+            </div>
+            <div class="filled-box"  data-aos="fade-up"
+            data-aos-anchor-placement="bottom-bottom" >
+            <div class="icon-box" id="icon-box"><i class="fa-solid fa-graduation-cap"></i></div>
+              <div>
+                <h2>Secondary Education</h2>
+              <h3>Narayana eCO school <br> <spam class="pink"><i>(2018)</i></spam> </h3>
+              <p>Science, CGPA : 9.80</p></div>
+            </div>
+            <div class="icon-box">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            
+            <div class="empty-box"></div>
+
+          </div>
+        </div>
+        <div class="right-box">
+          <div class="right-col">
+            <div class="skills-container" >
+              <div class="skill-holder">
+                <div class="outer"></div>
+                <div class="inner">
+                  <p>95%</p>
+                  <h3>HTML 5</h3>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="140px" height="140px">
+                  <defs>
+                     <linearGradient id="GradientColor">
+                        <stop offset="0%" stop-color="#e91e63" />
+                        <stop offset="100%" stop-color="#673ab7" />
+                     </linearGradient>
+                  </defs>
+                  <circle cx="70" cy="70" r="60" stroke-linecap="round" id="html"/>
+                </svg>
+                
+              </div>
+              <div class="skill-holder">
+                <div class="outer"></div>
+                <div class="inner">
+                  <p>93%</p>
+                  <h3>CSS</h3>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="140px" height="140px">
+                  <defs>
+                     <linearGradient id="GradientColor">
+                        <stop offset="0%" stop-color="#e91e63" />
+                        <stop offset="100%" stop-color="#673ab7" />
+                     </linearGradient>
+                  </defs>
+                  <circle cx="70" cy="70" r="60" stroke-linecap="round" id="css"/>
+                </svg>
+                
+              </div>
+              <div class="skill-holder">
+                <div class="outer"></div>
+                <div class="inner">
+                  <p>80%</p>
+                  <h3>JS</h3>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="140px" height="140px">
+                  <defs>
+                     <linearGradient id="GradientColor">
+                        <stop offset="0%" stop-color="#e91e63" />
+                        <stop offset="100%" stop-color="#673ab7" />
+                     </linearGradient>
+                  </defs>
+                  <circle cx="70" cy="70" r="60" stroke-linecap="round" id="js" />
+                </svg>
+                
+              </div>
+              <div class="skill-holder">
+                <div class="outer"></div>
+                <div class="inner">
+                  <p>65%</p>
+                  <h3>PHP</h3>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="140px" height="140px">
+                  <defs>
+                     <linearGradient id="GradientColor">
+                        <stop offset="0%" stop-color="#e91e63" />
+                        <stop offset="100%" stop-color="#673ab7" />
+                     </linearGradient>
+                  </defs>
+                  <circle cx="70" cy="70" r="60" stroke-linecap="round" id="php" />
+                </svg>
+                
+              </div>
+              <div class="skill-holder">
+                <div class="outer"></div>
+                <div class="inner">
+                  <p>70%</p>
+                  <h3>React Js</h3>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="140px" height="140px">
+                  <defs>
+                     <linearGradient id="GradientColor">
+                        <stop offset="0%" stop-color="#e91e63" />
+                        <stop offset="100%" stop-color="#673ab7" />
+                     </linearGradient>
+                  </defs>
+                  <circle cx="70" cy="70" r="60" stroke-linecap="round" id="reactjs" />
+                </svg>
+                
+              </div>
+              <div class="skill-holder">
+                <div class="outer"></div>
+                <div class="inner">
+                  <p>85%</p>
+                  <h3>Python</h3>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="140px" height="140px">
+                  <defs>
+                     <linearGradient id="GradientColor">
+                        <stop offset="0%" stop-color="#e91e63" />
+                        <stop offset="100%" stop-color="#673ab7" />
+                     </linearGradient>
+                  </defs>
+                  <circle cx="70" cy="70" r="60" stroke-linecap="round" id="python" />
+                </svg>
+                
+              </div>
+              <div class="skill-holder">
+                <div class="outer"></div>
+                <div class="inner">
+                  <p>87%</p>
+                  <h3>C++</h3>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="140px" height="140px">
+                  <defs>
+                     <linearGradient id="GradientColor">
+                        <stop offset="0%" stop-color="#e91e63" />
+                        <stop offset="100%" stop-color="#673ab7" />
+                     </linearGradient>
+                  </defs>
+                  <circle cx="70" cy="70" r="60" stroke-linecap="round" id="c"/>
+                </svg>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init(
+      {
+        offset: 150,
+      }
+    );
+  </script>
+  <script src="script.js"></script>
+</body>
 </html>
